@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Challenge Oracle-ONE Encriptador de texto by David García Cerón</title>
+        <link rel="stylesheet" href="./reset/reset.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="./assets/Logo.png" alt="Logo de Alura">
+        </header>
+
+        <main>
+            <section>
+                <textarea class="entrada-texto" cols="30" rows="10" placeholder="Ingrese el texto aquí" autofocus></textarea>
+                <div class="aviso">
+                    <img src="./assets/aviso.svg" alt="Imagen Aviso">
+                    <p class= "restriccion">Solo letras minúsculas y sin acentos.</p>
+                </div>
+                <div class="botones">
+                    <button name="encriptar" class="encriptar" onclick="encriptar()">Encriptar</button>
+                    <button name="desencriptar" class="desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </section>
+            <section>
+                <textarea class="salida-texto" cols="20" rows="10" disabled></textarea>
+                <div class="dinamico">
+                    <p class="texto1">Ningún mensaje fue encontrado</p>
+                    <p class="texto2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <button name="copiar" class="copiar" onclick="copiar()" style="display: none;"><span class="anuncio"></span>Copiar</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Desarrollado por David Garcia 2024</p>
+        </footer>
+
+    </body>
+
+    <script src="./script.js"></script>
+
+</html>
